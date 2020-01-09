@@ -1,6 +1,6 @@
 {
   "name": "basic-login",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-prod": " postcss ./src/tailwind-build.css  -o ./src/styles-tailwind.css && npm version patch --force && node ./replace.build.js && ng build --prod --output-path docs --base-href /BasicLogin/",
+    "build-prod": " postcss ./src/tailwind-build.css  -o ./src/styles-tailwind.css && npm version patch --force && node ./replace.build.js && ng build --prod --output-path docs --base-href /Cybot/",
     "tailwind-build": "postcss ./src/tailwind-build.css  -o ./src/styles-tailwind.css",
     "tailwind-watch": "postcss ./src/tailwind-build.css  -o ./src/styles-tailwind.css --watch",
     "prestart": "postcss ./src/tailwind-build.css  -o ./src/styles-tailwind.css"
