@@ -1,0 +1,44 @@
+<nav class="font-sans flex flex-col text-center content-center sm:flex-row
+  justify-around
+  sm:text-left py-2 px-6 bg-gray-500">
+
+  <div class="mb-2 sm:mb-0 flex flex-row">
+    <div class="h-10 w-10 self-center mr-2">
+      <img class="h-10 w-10 self-center"
+        src="../../../../assets/Images/CG_Lights_d400.png" />
+    </div>
+    <div>
+      <a href="/welcome" class="text-2xl no-underline text-grey-darkest
+        hover:text-blue-dark font-sans font-bold">Cybot Galactica</a><br>
+      <span class="text-xs text-grey-dark">The Galaxy's Premier Manufacturing
+        Corporation</span>
+    </div>
+  </div>
+
+  <div class="self-center flex flex-row">
+    <a routerLink="/welcome" class="nav-primary">Welcome</a>
+    <a routerLink="/about" class="nav-primary">About</a>
+    <a routerLink="/products" class="nav-primary">Products</a>
+    <a routerLink="/services" class="nav-primary">Services</a>
+    <a routerLink="/contact" class="nav-primary">Contact</a>
+  </div>
+  <div class="mb-2 sm:mb-0 flex flex-row">
+    FILLER until I figure out what to put here
+  </div>
+  <!--<div *ngIf="loggedIn" class="flex mb-4 self-end">
+
+    <img src="https://i.imgur.com/8Km9tLL.jpg"
+      class="rounded-full border-solid
+      border-green-900 border-2 h-10 w-10 inline-block">
+    <a [routerLink]="['/']" (click)="navigate('logout')"
+      class="nav-primary w-12">Logout</a>
+  </div>
+  <div *ngIf="!loggedIn" class="flex mb-4 self-end">
+    <svg class="fill-current text-black inline-block h-10 w-10"
+      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 20a10
+        10 0 1 1 0-20 10 10 0 0 1 0 20zM7 6v2a3 3 0 1 0 6 0V6a3 3 0 1 0-6
+        0zm-3.65 8.44a8 8 0 0 0 13.3 0 15.94 15.94 0 0 0-13.3 0z" /></svg>
+      <a
+        [routerLink]="['/login']" class="nav-primary w-12">Login</a>
+    </div>-->
+</nav>
