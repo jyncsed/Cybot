@@ -1,28 +1,28 @@
 <nav class="font-sans flex flex-col text-center content-center sm:flex-row
   justify-around
-  sm:text-left py-2 px-6 bg-gray-500">
+  sm:text-left py-2 px-6 bg-gray-500 flex-wrap">
 
-  <div class="mb-2 sm:mb-0 flex flex-row">
+  <div class="mb-2 sm:mb-0 flex flex-row flex-wrap">
     <div class="h-10 w-10 self-center mr-2">
       <img class="h-10 w-10 self-center"
         src="assets/Images/CG_Lights_d400.png" />
     </div>
     <div>
-      <a href="/welcome" class="text-2xl no-underline text-grey-darkest
+      <a routerLink="/welcome" class="text-2xl no-underline text-grey-darkest
         hover:text-blue-dark font-sans font-bold">Cybot Galactica</a><br>
       <span class="text-xs text-grey-dark">The Galaxy's Premier Manufacturing
         Corporation</span>
     </div>
   </div>
 
-  <div class="self-center flex flex-row">
+  <div class="self-center flex flex-row flex-wrap">
     <a routerLink="/welcome" class="nav-primary">Welcome</a>
     <a routerLink="/about" class="nav-primary">About</a>
     <a routerLink="/products" class="nav-primary">Products</a>
     <a routerLink="/services" class="nav-primary">Services</a>
     <a routerLink="/contact" class="nav-primary">Contact</a>
   </div>
-  <div class="mb-2 sm:mb-0 flex flex-row">
+  <div class="mb-2 sm:mb-0 flex flex-row flex-wrap">
     FILLER until I figure out what to put here
   </div>
   <!--<div *ngIf="loggedIn" class="flex mb-4 self-end">

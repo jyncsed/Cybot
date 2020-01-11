@@ -14,11 +14,14 @@ export class WelcomeComponent implements OnInit {
 
   ngOnInit() {
     this.teamMembers = [];
-    const temp = new TeamMember();
-    temp.name = 'Dex Sherin';
-    temp.title = 'CEO Cybot Galactica Chairman of the Galactica Group';
-    temp.image = 'https://storage.googleapis.com/wzukusers/user-34886327/images/5e12657b38cf6tkk2osu/DexAvatarSmall.png'
-    this.teamMembers.push(temp);
+    for (let i = 0; i < 10; i++) {
+      const temp = new TeamMember();
+      temp.name = 'Dex Sherin ';
+      temp.title = 'CEO Cybot Galactica';
+      temp.secondaryTitle = 'Chairman of the Galactica Group';
+      temp.image = 'https://storage.googleapis.com/wzukusers/user-34886327/images/5e12657b38cf6tkk2osu/DexAvatarSmall.png';
+      this.teamMembers.push(temp);
+    }
   }
 
 }

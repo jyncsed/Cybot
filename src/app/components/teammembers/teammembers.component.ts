@@ -12,7 +12,6 @@ export class TeammembersComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('Team Member', this.teamMember);
   }
 
 }
