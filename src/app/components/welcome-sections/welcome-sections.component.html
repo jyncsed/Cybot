@@ -1,0 +1,23 @@
+<div class="flex flex-wrap">
+
+    <div *ngIf="welcomeSection.imageOnRight" class="flex text-gray-700 px-4
+        py-2 m-2">
+        <img class="h-64 w-64"
+            src="{{welcomeSection.sideImage}}" />
+    </div>
+
+    <div class="flex-1 text-gray-700 text-left justify-center px-4 py-2
+        m-2">
+        <div class="flex text-3xl font-bold m-2">{{welcomeSection.firstLineText}}</div>
+        <div class="flex text-2xl m-2">{{welcomeSection.secondLineText}}</div>
+        <div class="flex text-base m-2 whitespace-pre-wrap">
+            <div>{{welcomeSection.bodyText}}</div>
+        </div>
+    </div>
+    <div *ngIf="!welcomeSection.imageOnRight" class="flex text-gray-700 px-4
+        py-2 m-2">
+        <img class="h-64 w-64"
+            src="{{welcomeSection.sideImage}}"
+            />
+    </div>
+</div>

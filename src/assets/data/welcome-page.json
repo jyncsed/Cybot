@@ -1,0 +1,18 @@
+{
+    "WelcomeSections": [
+        {
+            "firstLineText": "Cybot Galactica",
+            "secondLineText": "The Galaxy's Premier Manufacturing Corporation",
+            "bodyText": "Founded on Day 200 of Year 6, Cybot Galactica began as a small droid manufacturing corporation focusing on the mass production of a few select models of droids.Today Cybot Galactica is the flagship corporation in The Galactica Group, and as expanded to provide a wide variety of services and products to the public. \r\n\r\nProducing everything from droids, to ships and vehicles, to weapons, armor and tools, Cybot Galactica is both the primary supplierfor theGalactica Group, and one of the main manufacturers of goods for the galactic public.",
+            "sideImage": "assets/Images/CG_Lights_d400.png",
+            "imageOnRight": true
+        },
+        {
+            "firstLineText": "Asher I",
+            "secondLineText": "",
+            "bodyText": "The largest planet in the Asher system of the Sprizen sector, Asher I is the home to the primary manufacturing hubs of Cybot Galactica. Boasting hundreds of factory complexes, and numerous shipyards in the nearby space, Asher I is one on the largest independent manufacturing hubs in the galaxy.",
+            "sideImage": "assets/Images/asher.gif",
+            "imageOnRight": false
+        }
+    ]
+}
