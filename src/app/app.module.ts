@@ -28,7 +28,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TeammembersComponent } from './components/teammembers/teammembers.component';
 import { WelcomeSectionsComponent } from './components/welcome-sections/welcome-sections.component';
-
+import {CustomIconsModule } from './modules/custom-icons/custom-icons.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +55,8 @@ import { WelcomeSectionsComponent } from './components/welcome-sections/welcome-
     MatButtonModule,
     LoginModule,
     ControlsModule,
-    AlertsModule
+    AlertsModule,
+    CustomIconsModule
   ],
   providers: [
     AuthGuard,
