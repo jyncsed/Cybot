@@ -148,6 +148,16 @@
   font-family: 'ABeeZee', sans-serif;
 }
 
+.font-Aerospace {
+  font-family: 'Aerospace', sa;
+}
+
+@font-face {
+  font-family: Aerospace;
+
+  src: url(assets/fonts/Aerospace.ttf) format("truetype");
+}
+
 img,
 video {
   max-width: 100%;
@@ -416,14 +426,6 @@ template {
 
 /* Misc
    ========================================================================== */
-
-summary {
-  display: list-item;
-}
-
-/*
- * Add the correct display in all browsers.
- */
 
 .sr-only  {
   position: absolute;
@@ -11199,6 +11201,14 @@ summary {
   z-index: auto;
 }
 
+summary {
+  display: list-item;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
 details {
   display: block;
 }
@@ -11423,15 +11433,6 @@ samp {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 
-b,
-strong {
-  font-weight: bolder;
-}
-
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -11521,6 +11522,15 @@ abbr[title] {
   text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
 }
 
 @media (min-width: 640px)  {
