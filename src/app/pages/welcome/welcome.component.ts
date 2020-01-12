@@ -1,27 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { TeamMember } from 'src/app/models/team-member';
-
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-
+  private _jsonUrl = 'assets/data/team-members.json';
   teamMembers: TeamMember[];
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
     this.teamMembers = [];
-    for (let i = 0; i < 10; i++) {
-      const temp = new TeamMember();
-      temp.name = 'Dex Sherin ';
-      temp.title = 'CEO Cybot Galactica';
-      temp.secondaryTitle = 'Chairman of the Galactica Group';
-      temp.image = 'https://storage.googleapis.com/wzukusers/user-34886327/images/5e12657b38cf6tkk2osu/DexAvatarSmall.png';
-      this.teamMembers.push(temp);
-    }
+    this.getJSON().subscribe(data => {
+      this.teamMembers = data.TeamMember;
+    });
   }
-
+  public getJSON(): Observable<any> {
+    return this.http.get(this._jsonUrl);
+  }
 }

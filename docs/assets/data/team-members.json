@@ -1,0 +1,34 @@
+{
+    "TeamMember": [
+        {
+            "name": "Dex Sherin",
+            "title": "COO Cybot Galactica",
+            "secondaryTitle": "Chairman of the Galactica Group",
+            "image": "https://storage.googleapis.com/wzukusers/user-34886327/images/5e12657b38cf6tkk2osu/DexAvatarSmall.png"
+        },
+        {
+            "name": "Lyranthe Akita",
+            "title": "CEO Cybot Galactica",
+            "secondaryTitle": "",
+            "image": "https://storage.googleapis.com/wzukusers/user-500011/images/559414cc869c9ZrgE92w/peopel-business-_0010_Layer-29_200.jpg"
+        },
+        {
+            "name": "Jax Bendal",
+            "title": "Director of Recruitment",
+            "secondaryTitle": "",
+            "image": "http://custom.swcombine.com/static/1/1471091-100-100.jpg"
+        },
+        {
+            "name": "Position Vacant",
+            "title": "Director of Sales",
+            "secondaryTitle": "",
+            "image": "assets/Images/Vacant-position.png"
+        },
+        {
+            "name": "Position Vacant",
+            "title": "Director of Manufacturing",
+            "secondaryTitle": "",
+            "image": "assets/Images/Vacant-position.png"
+        }
+    ]
+}
