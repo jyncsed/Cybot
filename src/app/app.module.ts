@@ -28,7 +28,12 @@ import { ServicesComponent } from './pages/services/services.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TeammembersComponent } from './components/teammembers/teammembers.component';
 import { WelcomeSectionsComponent } from './components/welcome-sections/welcome-sections.component';
-import {CustomIconsModule } from './modules/custom-icons/custom-icons.module'
+import {CustomIconsModule } from './modules/custom-icons/custom-icons.module';
+import { DroidsComponent } from './pages/products/droids/droids.component';
+import { ItemsComponent } from './pages/products/items/items.component';
+import { WeaponsComponent } from './pages/products/weapons/weapons.component';
+import { ShipsComponent } from './pages/products/ships/ships.component';
+import { VehicleComponent } from './pages/products/vehicle/vehicle.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +47,12 @@ import {CustomIconsModule } from './modules/custom-icons/custom-icons.module'
     ServicesComponent,
     ContactComponent,
     TeammembersComponent,
-    WelcomeSectionsComponent
+    WelcomeSectionsComponent,
+    DroidsComponent,
+    ItemsComponent,
+    WeaponsComponent,
+    ShipsComponent,
+    VehicleComponent
   ],
   imports: [
     BrowserModule,

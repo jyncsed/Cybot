@@ -13,7 +13,7 @@ export class WelcomeSectionsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('Welcome section page', this.welcomeSection);
+
   }
 
 }

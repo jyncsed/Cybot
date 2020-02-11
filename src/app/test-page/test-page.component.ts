@@ -14,9 +14,9 @@ export class TestPageComponent implements OnInit {
     return decode(localStorage.getItem('token'));
   }
 
-  constructor(private authService: AuthService) {}
+  constructor(private authService: AuthService) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
   login() {
     const userAuth = new UserAuthentication();
