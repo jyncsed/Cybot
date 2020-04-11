@@ -1,0 +1,30 @@
+{
+    "Sections": [
+        {
+            "type": "droids",
+            "Items": [
+                {
+                    "itemID": "13:12",
+                    "price": "1800"
+                },
+                {
+                    "itemID": "13:41",
+                    "price": "1800"
+                }
+            ]
+        },
+        {
+            "type": "items",
+            "Items": [
+                {
+                    "itemID": "1",
+                    "price": "1800"
+                },
+                {
+                    "itemID": "2",
+                    "price": "1800"
+                }
+            ]
+        }
+    ]
+}

@@ -1,44 +1,53 @@
 
-<ul class="flex flex-wrap justify-center bg-gray-500">
-    <li class="mr-1">
-        <button class="inline-block border-1 border-t border-r border-b border-l
-            rounded m-1 py-2 px-4 text-gray-700 font-Aerospace font-semibold
-            border-gray-700 bg-gray-400 hover:bg-gray-200 hover:shadow-2xl
-            justify-center" (click)="showDroidPage()">Droids </button>
-    </li>
-    <li class="mr-1">
-        <button class="inline-block border-1 border-t border-r border-b border-l
-            rounded m-1 py-2 px-4 text-gray-700 font-Aerospace font-semibold
-            border-gray-700 bg-gray-400 hover:bg-gray-200 hover:shadow-2xl"
-            (click)="showItemsPage()">Items</button>
-    </li>
-    <li class="mr-1">
-        <button class="inline-block border-1 border-t border-r border-b border-l
-            rounded m-1 py-2 px-4 text-gray-700 font-Aerospace font-semibold
-            border-gray-700 bg-gray-400 hover:bg-gray-200 hover:shadow-2xl"
-            (click)="showWeaponsPage()">Weapons and Armor</button>
-    </li>
-    <li class="mr-1">
-        <button class="inline-block border-1 border-t border-r border-b border-l
-            rounded m-1 py-2 px-4 text-gray-700 font-Aerospace font-semibold
-            border-gray-700 bg-gray-400 hover:bg-gray-200 hover:shadow-2xl"
-            (click)="showShipsPage()">Ships</button>
-    </li>
-    <li class="mr-1">
-        <button class="inline-block border-1 border-t border-r border-b border-l
-            rounded m-1 py-2 px-4 text-gray-700 font-Aerospace font-semibold
-            border-gray-700 bg-gray-400 hover:bg-gray-200 hover:shadow-2xl"
-            (click)="showVehiclesPage()">Vehicles</button>
-    </li>
-    <li class="mr-1">
-        <button class="inline-block border-1 border-t border-r border-b border-l
-            rounded m-1 py-2 px-4 text-gray-700 font-Aerospace font-semibold
-            border-gray-700 bg-gray-400 hover:bg-gray-200 hover:shadow-2xl"
-            (click)="showSpecialsPage()">Special Packages</button>
-    </li>
-</ul>
-<app-droids *ngIf="showDroids"></app-droids>
-<app-items *ngIf="showItems"></app-items>
-<app-ships *ngIf="showShips"></app-ships>
-<app-vehicle *ngIf="showVehicle"></app-vehicle>
-<app-weapons *ngIf="showWeapons"></app-weapons>
+<script>
+    /* Optional Javascript to close the radio button version by clicking it again */
+    var myRadios = document.getElementsByName('tabs2');
+    var setCheck;
+    var x = 0;
+    for(x = 0; x < myRadios.length; x++){
+        myRadios[x].onclick = function(){
+            if(setCheck != this){
+                 setCheck = this;
+            }else{
+                this.checked = false;
+                setCheck = null;
+        }
+        };
+    }
+ </script>
+<div class="w-full mx-auto p-8">
+    <div class="shadow-md">
+        <div class="tab w-full overflow-hidden border-t">
+            <input class="absolute opacity-0" id="tab-multi-one" type="checkbox"
+                name="tabs">
+            <label class="block p-5 leading-normal cursor-pointer text-gray-700
+                font-semibold
+                bg-gray-500
+                font-Aerospace"
+                for="tab-multi-one">Droids</label>
+            <div class="tab-content overflow-hidden border-l-2 bg-gray-100
+                border-gray-900 leading-normal">
+                <div *ngFor="let droidL of droidList">
+                    <app-list-products
+                        [listProduct]="droidL"></app-list-products>
+                </div>
+            </div>
+        </div>
+        <div class="tab w-full overflow-hidden border-t">
+            <input class="absolute opacity-0" id="tab-multi-two"
+                type="checkbox"
+                name="tabs">
+            <label class="block p-5 leading-normal cursor-pointer
+                text-gray-700
+                font-semibold
+                bg-gray-500
+                font-Aerospace"
+                for="tab-multi-two">Items</label>
+            <div class="tab-content overflow-hidden border-l-2 bg-gray-100
+                border-indigo-500 leading-normal">
+                <p class="p-5"></p>
+            </div>
+        </div>
+        <app-accordian></app-accordian>
+    </div>
+</div>
