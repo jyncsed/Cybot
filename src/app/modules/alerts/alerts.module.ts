@@ -6,7 +6,7 @@ import { AlertService } from './alert.service';
 
 
 @NgModule({
-  declarations: [AlertComponent, AlertService],
+  declarations: [AlertComponent],
   imports: [
     CommonModule
   ],

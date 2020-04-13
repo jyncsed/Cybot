@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'test2', component: TestPage2Component, data: { role: 'Admin' }, canActivate: [AuthGuard, RoleGuard] },
 
   // this should be last
-  { path: '**', component: PageNotFoundComponent },
+  { path: '**', component: PageNotFoundComponent }
 
 
 ];

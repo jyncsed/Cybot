@@ -1,7 +1,7 @@
 
 <script>
     /* Optional Javascript to close the radio button version by clicking it again */
-    var myRadios = document.getElementsByName('tabs2');
+    var myRadios = document.getElementsByName('tabs');
     var setCheck;
     var x = 0;
     for(x = 0; x < myRadios.length; x++){
@@ -27,9 +27,11 @@
                 for="tab-multi-one">Droids</label>
             <div class="tab-content overflow-hidden border-l-2 bg-gray-100
                 border-gray-900 leading-normal">
-                <div *ngFor="let droidL of droidList">
-                    <app-list-products
-                        [listProduct]="droidL"></app-list-products>
+                <div class="grid lg:grid-cols-4 gap-4">
+                    <div *ngFor="let droidL of droidList">
+                        <app-list-products
+                            [listProduct]="droidL"></app-list-products>
+                    </div>
                 </div>
             </div>
         </div>
@@ -48,6 +50,6 @@
                 <p class="p-5"></p>
             </div>
         </div>
-        <app-accordian></app-accordian>
+        <app-accordian title="Weapons and Armor" [listProducts]="droidList"></app-accordian>
     </div>
 </div>

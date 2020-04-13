@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ListProduct } from 'src/app/models/list-product';
 
 @Component({
   selector: 'app-accordian',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./accordian.component.scss']
 })
 export class AccordianComponent implements OnInit {
-
+  @Input() title: string;
+  @Input() listProducts: ListProduct[];
   constructor() { }
 
   ngOnInit() {

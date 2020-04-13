@@ -6,9 +6,14 @@
         font-semibold
         bg-gray-500
         font-Aerospace"
-        for="tab-multi-three">Weapons and Armor</label>
+        for="tab-multi-three">{{title}}</label>
     <div class="tab-content overflow-hidden border-l-2 bg-gray-100
         border-indigo-500 leading-normal">
-        <p class="p-5"></p>
+        <div class="grid lg:grid-cols-4 gap-4">
+            <div *ngFor="let listProduct of listProducts">
+                <app-list-products
+                    [listProduct]="listProduct"></app-list-products>
+            </div>
+        </div>
     </div>
 </div>

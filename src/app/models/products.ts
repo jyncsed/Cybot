@@ -5,6 +5,7 @@ export class Items {
 
 export class Sections {
     type: string;
+    title: string;
     items: Items[];
 }
 

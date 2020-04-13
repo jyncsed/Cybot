@@ -2,6 +2,7 @@
     "Sections": [
         {
             "type": "droids",
+            "title": "Droids",
             "Items": [
                 {
                     "itemID": "13:12",
@@ -15,6 +16,7 @@
         },
         {
             "type": "items",
+            "title": "Items",
             "Items": [
                 {
                     "itemID": "1",
